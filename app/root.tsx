@@ -23,7 +23,10 @@ export const links: LinksFunction = () => [
 ];
 
 export const meta: MetaFunction = () => {
-  return [{ title: "About Me" }, { name: "about-me", content: "My own Carrd" }];
+  return [
+    { title: "About Me | Tifany Nunes" },
+    { name: "about-me", content: "My own Carrd" },
+  ];
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {
