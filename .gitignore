@@ -1,0 +1,17 @@
+# Node
+node_modules
+bun.lockb
+dist
+build
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode
+.vscode
+
+# Env
+.env
+.env.*
