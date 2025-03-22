@@ -27,19 +27,21 @@ export default function Index() {
 
         <div className="mt-4 text-center">
           <h1 className="text-2xl font-bold text-gray-800">Tifany Nunes</h1>
-          <p className="text-gray-600">Web Developer & Designer</p>
+          <p className="text-sm text-gray-600">
+            Desenvolvedora Front-End | Web Designer
+          </p>
         </div>
 
         <div className="mt-6 px-6">
           <h2 className="mb-2 text-lg font-semibold text-gray-800">About</h2>
           <p className="text-gray-600">
-            Creative web developer with a passion for clean design and intuitive
-            user experiences. Specializing in responsive websites and modern
-            frameworks.
+            Desenvolvedor web criativo com paixão por design limpo e
+            experiências de usuário intuitivas. Especializado em sites
+            responsivos e frameworks modernos.
           </p>
         </div>
 
-        <div className="mt-6 flex justify-center space-x-4 px-6">
+        <div className="m-6 flex justify-center space-x-4 px-6">
           <Link to={"/"} className="rounded-full">
             <Github className="h-5 w-5" />
           </Link>
@@ -56,8 +58,6 @@ export default function Index() {
             <Mail className="h-5 w-5" />
           </Link>
         </div>
-
-        <div className="mt-8 h-16 bg-gray-50 p-4">bla bla</div>
       </div>
     </main>
   );
