@@ -1,5 +1,7 @@
 import { Link } from "@remix-run/react";
 import { Github, Instagram, Mail, Twitter } from "lucide-react";
+import { FaFigma, FaGithub, FaHeart } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Index() {
   return (
@@ -43,19 +45,19 @@ export default function Index() {
 
         <div className="m-6 flex justify-center space-x-4 px-6">
           <Link to={"/"} className="rounded-full">
-            <Github className="h-5 w-5" />
+            <FaGithub className="h-5 w-5" />
           </Link>
 
           <Link to={"/"} className="rounded-full">
-            <Twitter className="h-5 w-5" />
+            <FaXTwitter className="h-5 w-5" />
           </Link>
 
           <Link to={"/"} className="rounded-full">
-            <Instagram className="h-5 w-5" />
+            <FaFigma className="h-5 w-5" />
           </Link>
 
           <Link to={"/"} className="rounded-full">
-            <Mail className="h-5 w-5" />
+            <FaHeart className="h-5 w-5" />
           </Link>
         </div>
       </div>
