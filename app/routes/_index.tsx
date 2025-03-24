@@ -1,12 +1,11 @@
 import { Link } from "@remix-run/react";
-import { Github, Instagram, Mail, Twitter } from "lucide-react";
 import { FaFigma, FaGithub, FaHeart } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Index() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
-      <div className="w-full max-w-md overflow-hidden rounded-xl bg-white shadow-lg">
+    <main className="flex min-h-screen items-center justify-center bg-black p-4">
+      <div className="w-full max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
         <div className="relative h-40 w-full">
           <img
             src="/assets/header.jpg"
@@ -44,19 +43,35 @@ export default function Index() {
         </div>
 
         <div className="m-6 flex justify-center space-x-4 px-6">
-          <Link to={"/"} className="rounded-full">
+          <Link
+            to={"https://github.com/pinuya"}
+            className="rounded-full transition-colors hover:text-purple-800"
+            title="GitHub"
+          >
             <FaGithub className="h-5 w-5" />
           </Link>
 
-          <Link to={"/"} className="rounded-full">
+          <Link
+            to={"https://x.com/pinuyami"}
+            className="rounded-full transition-colors hover:text-purple-800"
+            title="Twitter (X)"
+          >
             <FaXTwitter className="h-5 w-5" />
           </Link>
 
-          <Link to={"/"} className="rounded-full">
+          <Link
+            to={"https://www.figma.com/@tifany1"}
+            className="rounded-full transition-colors hover:text-purple-800"
+            title="Figma"
+          >
             <FaFigma className="h-5 w-5" />
           </Link>
 
-          <Link to={"/"} className="rounded-full">
+          <Link
+            to={"https://pinuya.site/"}
+            className="rounded-full transition-colors hover:text-purple-800"
+            title="Portfolio"
+          >
             <FaHeart className="h-5 w-5" />
           </Link>
         </div>
