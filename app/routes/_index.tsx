@@ -4,11 +4,23 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Index() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-black p-4">
+    <div
+      style={{
+        backgroundColor: "#0a0a0a",
+        backgroundImage:
+          "linear-gradient(to right, #222222 1px, transparent 1px), linear-gradient(to bottom, #222222 1px, transparent 1px)",
+        backgroundSize: "30px 30px",
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "1rem",
+      }}
+    >
       <div className="w-full max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
         <div className="relative h-40 w-full">
           <img
-            src="/assets/header.jpg"
+            src="/assets/header.gif"
             alt="Decorative background with swirls"
             width={1000}
             height={200}
@@ -35,14 +47,22 @@ export default function Index() {
 
         <div className="mt-6 px-6">
           <h2 className="mb-2 text-lg font-semibold text-gray-800">About</h2>
-          <p className="text-gray-600">
-            Desenvolvedor web criativo com paixão por design limpo e
-            experiências de usuário intuitivas. Especializado em sites
-            responsivos e frameworks modernos.
+          <p className="text-sm text-gray-600">
+            Oi, esse carrd é um carrd informativo, onde possui contato
+            profissional e acesso ao meu portfólio. Eu sou uma desenvolvedora
+            Front-End e Web Designer. Gosto muito de desenvolver interfaces e
+            utilizar frameworks modernos.
           </p>
         </div>
 
         <div className="m-6 flex justify-center space-x-4 px-6">
+          <Link
+            to={"https://pinuya.site/"}
+            className="rounded-full transition-colors hover:text-purple-800"
+            title="Portfolio"
+          >
+            <FaHeart className="h-5 w-5" />
+          </Link>
           <Link
             to={"https://github.com/pinuya"}
             className="rounded-full transition-colors hover:text-purple-800"
@@ -66,16 +86,8 @@ export default function Index() {
           >
             <FaFigma className="h-5 w-5" />
           </Link>
-
-          <Link
-            to={"https://pinuya.site/"}
-            className="rounded-full transition-colors hover:text-purple-800"
-            title="Portfolio"
-          >
-            <FaHeart className="h-5 w-5" />
-          </Link>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
