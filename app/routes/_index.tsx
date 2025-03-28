@@ -1,10 +1,14 @@
 import { Link } from "@remix-run/react";
 import { FaFigma, FaGithub, FaHeart } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export default function Index() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
       style={{
         backgroundColor: "#0a0a0a",
         backgroundImage:
@@ -17,7 +21,12 @@ export default function Index() {
         padding: "1rem",
       }}
     >
-      <div className="w-full max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="w-full max-w-md overflow-hidden rounded-3xl bg-white shadow-lg"
+      >
         <div className="relative h-40 w-full">
           <img
             src="/assets/header.gif"
@@ -28,7 +37,12 @@ export default function Index() {
           />
         </div>
 
-        <div className="relative mx-auto mt-10 h-32 w-32 overflow-hidden rounded-full border-4 border-white bg-white shadow-lg">
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="relative mx-auto mt-10 h-32 w-32 overflow-hidden rounded-full border-4 border-white bg-white shadow-lg"
+        >
           <img
             src="/assets/pfp.jpg"
             alt="Profile"
@@ -36,7 +50,7 @@ export default function Index() {
             height={128}
             className="object-cover"
           />
-        </div>
+        </motion.div>
 
         <div className="mt-4 text-center">
           <h1 className="text-2xl font-bold text-gray-800">Tifany Nunes</h1>
@@ -55,7 +69,12 @@ export default function Index() {
           </p>
         </div>
 
-        <div className="m-6 flex justify-center space-x-4 px-6">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="m-6 flex justify-center space-x-4 px-6"
+        >
           <Link
             to={"https://pinuya.site/"}
             className="rounded-full transition-colors hover:text-purple-800"
@@ -86,8 +105,8 @@ export default function Index() {
           >
             <FaFigma className="h-5 w-5" />
           </Link>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }
