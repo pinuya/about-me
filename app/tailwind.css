@@ -2,7 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset específico para rounded */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+}
+
 html,
 body {
-  @apply bg-[#070705];
+  @apply text-white;
+}
+
+/* Força as classes rounded se necessário */
+@layer utilities {
+  .rounded-force {
+    border-radius: 0.25rem !important;
+  }
+  .rounded-lg-force {
+    border-radius: 0.5rem !important;
+  }
 }
