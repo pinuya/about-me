@@ -39,7 +39,7 @@ export default function About() {
       />
 
       <motion.div
-        className="xl relative flex w-full max-w-2 flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white/10 p-8 shadow-2xl backdrop-blur-md md:p-12"
+        className="relative flex w-full max-w-2xl flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white/10 p-8 shadow-2xl backdrop-blur-md md:p-12"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
